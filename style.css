@@ -2,9 +2,6 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #000;
-}
-
-p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -137,6 +134,122 @@ p {
   height: auto;
   margin: 0 auto;
   border: 0;
+}
+
+.email-container {
+  width: fit-content;
+  max-height: 80vh;
+  max-width: 100vw;
+  margin: 0 auto 20px auto;
+}
+
+.email-container p{
+  color: #fff;
+}
+
+.email-signup-form {
+  max-width: 400px;
+  border: 3px solid #3797ae;
+  padding: 1px 20px 20px 20px;
+  border-radius: 8px;
+}
+
+.email-signup-form .formkit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-signup-form .formkit-field {
+  width: 100%;
+}
+
+.email-signup-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.email-signup-form input:focus {
+  outline: none;
+  background-color: #f0d6c0;
+}
+
+.email-signup-form button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  background: #9b42bd;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.email-signup-form button:hover {
+  background: #8a3ba8;
+}
+
+.email-signup-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.email-signup-form .formkit-alert {
+  margin: 0 0 15px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.email-signup-form .formkit-alert-error {
+  color: #a33;
+  background: #fbeaea;
+  border: 1px solid #e5b5b5;
+}
+
+.email-signup-form .formkit-alert-success {
+  color: #176b3a;
+  background: #e8f7ee;
+  border: 1px solid #a9d8ba;
+}
+
+.email-signup-form .formkit-powered-by-convertkit-container {
+  display: none;
+}
+
+.formkit-alert-error:empty {
+  display: none;
+}
+
+/*This is on email_confirmation.html*/
+.email-confirmation-container {
+  width: fit-content;
+  max-height: 80vh;
+  max-width: 100vw;
+  margin: 0 auto 20px auto;
+  color: #fff;
+  width: 400px;
+  border: 3px solid #e38502;
+  padding: 1px 20px;
+  margin: 20px auto 0px auto;
+  border-radius: 8px;
+}
+
+.confirmation-logo {
+  max-height: 50vh;
+  width: fit-content;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.confirmation-logo svg {
+  display: block;
+  height: 60vh;
+  width: auto;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

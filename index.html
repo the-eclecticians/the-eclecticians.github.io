@@ -134,6 +134,64 @@
 		    </div>
       </a>
     </div>
+    <div class="email-container">
+			<form
+			  action="https://app.kit.com/forms/9971506/subscriptions"
+			  method="post"
+			  data-sv-form="9971506"
+			  data-uid="6983b47890"
+			  class="email-signup-form"
+	      data-options='{
+			    "settings": {
+			      "after_subscribe": {
+			        "action": "message",
+			        "success_message": "Success! Now check your email to confirm your subscription.",
+			        "redirect_url": ""
+			      }
+			    },
+			    "recaptcha": {
+			      "enabled": false
+			    }
+			  }'
+			>
+	    	<p>Sign up to receive email updates from The Eclecticians</p>
+			  <ul
+			    data-element="errors"
+			    class="formkit-alert formkit-alert-error"
+			  ></ul>
+
+			  <div
+			    data-element="fields"
+			    class="formkit-fields"
+			  >
+			    <div class="formkit-field">
+			      <input
+			        name="email_address"
+			        type="email"
+			        placeholder="Email Address"
+			        aria-label="Email Address"
+			        required
+			      >
+			    </div>
+
+			    <div class="formkit-field">
+			      <input
+			        name="fields[first_name]"
+			        type="text"
+			        placeholder="First Name"
+			        aria-label="First Name"
+			      >
+			    </div>
+
+			    <button
+			      type="submit"
+			      data-element="submit"
+			    >
+			      Subscribe
+			    </button>
+			  </div>
+			</form>
+    </div>
 		<div class="socials-container">
 		  <a href="https://instagram.com/eclecticians" target="_blank" rel="noopener noreferrer">
 		    <img src="images/instagram_icon.svg" alt="Eclecticians on Instagram">
@@ -196,5 +254,6 @@
 	  </div>
   </body>
   <script src="script.js"></script>
+  <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 </html>
 
